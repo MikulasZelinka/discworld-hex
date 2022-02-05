@@ -1,0 +1,8 @@
+name: discworld-hex
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - faiss-cpu
+  - pytorch
+prefix: /Users/mzelinka/opt/miniconda3/envs/discworld-hex
