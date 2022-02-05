@@ -16,7 +16,7 @@ pyproject-flake8 = "^0.0.1-alpha.2"
 pytest = "^7.0.0"
 
 [tool.poetry.scripts]
-search = "discworld_hex.main:search"
+search = "discworld_hex:search"
 
 [tool.black]
 line-length = 120
