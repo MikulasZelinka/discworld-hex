@@ -7,6 +7,9 @@ authors = ["Mikuláš Zelinka <mikulas@zelinka.dev>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 sentence-transformers = "^2.1.0"
+wikipedia = "^1.4.0"
+pydantic = "^1.9.0"
+loguru = "^0.6.0"
 
 [tool.poetry.dev-dependencies]
 black = "^22.1.0"
