@@ -7,7 +7,8 @@ Clustering and search tool applied to plots of Discworld novels.
 ## Setup
 
 ```bash
-cd conda && chmod a+x bootstrap.sh && ./bootstrap.sh
+source conda/bootstrap.sh
+conda activate discworld-hex
 poetry install
 ```
 
