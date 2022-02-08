@@ -5,7 +5,13 @@ Hex clusters Discworld's stories.
 Clustering and search tool applied to plots of Discworld novels.
 Currently, given an input sentence, it will find the most similar parts of Discworld books based on their plot summaries from Wikipedia.
 
+This is just a tiny proof-of-concept that could be easily extended to cover much larger datasets.
+
 ## Setup
+
+Should work out of the box with `bash` anda couple of prerequisites:
+- [conda](https://docs.conda.io/en/latest/miniconda.html)
+- [poetry](https://python-poetry.org/docs/#installation)
 
 ```bash
 ( cd conda && source bootstrap.sh )
