@@ -9,7 +9,7 @@ This is just a tiny proof-of-concept that could be easily extended to cover much
 
 ## Setup
 
-Should work out of the box with `bash` anda couple of prerequisites:
+Should work out of the box with `bash` and a couple of prerequisites:
 - [conda](https://docs.conda.io/en/latest/miniconda.html)
 - [poetry](https://python-poetry.org/docs/#installation)
 
