@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "discworld-hex"
-version = "0.1.0"
+version = "1.0.0"
 description = "Hex clusters Discworld's stories."
 authors = ["Mikuláš Zelinka <mikulas@zelinka.dev>"]
 
@@ -8,8 +8,11 @@ authors = ["Mikuláš Zelinka <mikulas@zelinka.dev>"]
 python = "^3.8"
 sentence-transformers = "^2.1.0"
 wikipedia = "^1.4.0"
-pydantic = "^1.9.0"
 loguru = "^0.6.0"
+# pydantic 1.9 isn't an option due to a spacy issue: https://github.com/explosion/spaCy/discussions/10142
+pydantic = "^1.8"
+spacy = "^3.2.1"
+en-core-web-sm = {url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.2.0/en_core_web_sm-3.2.0.tar.gz"}
 
 [tool.poetry.dev-dependencies]
 black = "^22.1.0"
@@ -20,6 +23,7 @@ pytest = "^7.0.0"
 
 [tool.poetry.scripts]
 search = "discworld_hex:search"
+build = "discworld_hex:build"
 
 [tool.black]
 line-length = 120

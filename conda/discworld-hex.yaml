@@ -5,4 +5,4 @@ dependencies:
   - python=3.8
   - faiss-cpu
   - pytorch
-prefix: /Users/mzelinka/opt/miniconda3/envs/discworld-hex
+prefix: /home/myke/miniconda3/envs/discworld-hex

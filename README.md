@@ -3,17 +3,72 @@
 Hex clusters Discworld's stories.
 
 Clustering and search tool applied to plots of Discworld novels.
+Currently, given an input sentence, it will find the most similar parts of Discworld books based on their plot summaries from Wikipedia.
 
 ## Setup
 
 ```bash
-source conda/bootstrap.sh
+( cd conda && source bootstrap.sh )
 conda activate discworld-hex
 poetry install
 ```
 
 ## Usage
 
+TL;DR:
+
 ```bash
+build
 search
 ```
+
+To fetch data and build and export the index
+
+```bash
+build
+# is just a shortcut for:
+poetry run build
+```
+
+To use the index to search:
+
+```bash
+search
+# is just a shortcut for:
+poetry run search
+```
+
+To run any python script in this project:
+
+```bash
+poetry run python src/discworld_hex/any_file.py
+```
+
+To run all checks:
+
+```bash
+poetry run pre-cmmit
+```
+
+## TODO
+
+### Functionality
+
+(What the user would notice.)
+
+- [ ] Allow custom `wikipedia` queries on the input (and thus custom libraries)
+- [ ] Aggregate search results per-book
+- [ ] Allow merging libraries
+- [ ] Better CLI, allow to change `k`, pass in multiple sentences, etc., either:
+    - [ ] [`click`](https://github.com/pallets/click)ify and [`rich`](https://github.com/Textualize/rich)ify the
+      interface
+    - [ ] Alternatively, just make it into an API
+- [ ] Support [other (faster, less accurate) indexes](https://github.com/facebookresearch/faiss/wiki/Faster-search)
+
+### Maintenance
+
+(What the user shouldn't notice.)
+
+- [ ] Less redundant library serialization
+- More tests
+    - [ ] Rebuilding Library and the FAISS index
