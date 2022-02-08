@@ -63,6 +63,7 @@ poetry run pre-cmmit
 (What the user would notice.)
 
 - [ ] Allow custom `wikipedia` queries on the input (and thus custom libraries)
+- [ ] Fine-tune (e.g., standard (masked) language modelling) on the specific subdomains
 - [ ] Aggregate search results per-book
 - [ ] Allow merging libraries
 - [ ] Better CLI, allow to change `k`, pass in multiple sentences, etc., either:
