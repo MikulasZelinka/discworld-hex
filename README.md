@@ -5,7 +5,7 @@ Hex clusters Discworld's stories.
 Clustering and search tool applied to plots of Discworld novels.
 Currently, given an input sentence, it will find the most similar parts of Discworld books based on their plot summaries from Wikipedia.
 
-This is just a tiny proof-of-concept that could be easily extended to cover much larger datasets.
+This is just a tiny proof-of-concept of using [FAISS](https://github.com/facebookresearch/faiss) with transformer language models that could be easily extended to cover much larger datasets.
 
 ## Setup
 
@@ -21,14 +21,14 @@ poetry install
 
 ## Usage
 
-TL;DR:
+TL;DR (when `poetry` is installed and the `discworld-hex` conda env is activated):
 
 ```bash
 build
 search
 ```
 
-To fetch data and build and export the index
+To only fetch data and build and export the index:
 
 ```bash
 build
